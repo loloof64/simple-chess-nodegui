@@ -33,13 +33,13 @@
     "controlFields": {
       "Depends": "libx11-6",
       "Section": "x11",
-      "Maintainer": "Someone",
+      "Maintainer": "Laurent Bernabe",
       "Priority": "optional",
-      "Description": "A NodeGui application"
+      "Description": "A simple chess application"
     },
     "prePack": [
       "cd $debianStep_debianSourceDirectory && mkdir -p usr/share/applications",
-      "cd $debianStep_debianSourceDirectory && cp $pruneStep_trashDirectory/packaging/linux/nodeguiapp.desktop usr/share/applications/",
+      "cd $debianStep_debianSourceDirectory && cp $pruneStep_trashDirectory/packaging/linux/simplechess.desktop usr/share/applications/",
 
       "cd $debianStep_debianSourceDirectory && mkdir -p usr/share/icons",
       "cd $debianStep_debianSourceDirectory && cp -r $pruneStep_trashDirectory/packaging/linux/icons/hicolor usr/share/icons/"
@@ -47,25 +47,25 @@
   },
   "appImage": {
     "prePack": [
-      "cp $pruneStep_trashDirectory/packaging/linux/nodeguiapp_appimage.desktop $appImageStep_appImageSourceDirectory",
-      "cp $pruneStep_trashDirectory/packaging/linux/icons/hicolor/32x32/apps/nodeguiapp.png $appImageStep_appImageSourceDirectory"
+      "cp $pruneStep_trashDirectory/packaging/linux/simplechess_appimage.desktop $appImageStep_appImageSourceDirectory",
+      "cp $pruneStep_trashDirectory/packaging/linux/icons/hicolor/256x256/apps/simplechess.png $appImageStep_appImageSourceDirectory"
     ]
   },
   "nsis": {
     "skip": false,
-    "description": "A NodeGui application",
+    "description": "A simple chess application",
     "detailColors": "3db54a 000000",
-    "appTitle": "nodeguiapp",
-    "installerIcon": "$pruneStep_trashDirectory/packaging/windows/nodeguiapp.ico",
-    "uninstallerIcon": "$pruneStep_trashDirectory/packaging/windows/nodeguiapp.ico"
+    "appTitle": "simple chess",
+    "installerIcon": "$pruneStep_trashDirectory/packaging/windows/simplechess.ico",
+    "uninstallerIcon": "$pruneStep_trashDirectory/packaging/windows/simplechess.ico"
   },
   "dmg" : {
-    "applicationIcon": "$pruneStep_trashDirectory/packaging/macos/nodeguiapp.icns",
-    "applicationTitle": "nodeguiapp",
-    "nsHumanReadableCopyright": "Copyright 2023 Someone",
-    "cfBundleIdentifier": "com.someapp.someapp",
+    "applicationIcon": "$pruneStep_trashDirectory/packaging/macos/simplechess.icns",
+    "applicationTitle": "simple chess",
+    "nsHumanReadableCopyright": "Copyright 2023 Laurent Bernabe",
+    "cfBundleIdentifier": "com.loloof64.simplechess",
     "prePack": [
-      "mv $dmgStep_dmgResourcesDirectory/nodeguiapp $dmgStep_dmgMacOSDirectory/"
+      "mv $dmgStep_dmgResourcesDirectory/simplechess $dmgStep_dmgMacOSDirectory/"
     ]
   }
 

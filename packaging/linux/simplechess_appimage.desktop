@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=NodeGuiApp
+Name=Simple chess
 Exec=nodegui-simple-starter
 Terminal=false
 Type=Application
 Comment=A NodeGui application
 Categories=System;X-GNOME-Utilities;
-Icon=nodeguiapp
+Icon=simplechess
