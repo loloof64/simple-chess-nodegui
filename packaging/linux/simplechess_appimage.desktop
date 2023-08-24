@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Simple chess
-Exec=simplechess
+Exec=simple-chess
 Terminal=false
 Type=Application
 Comment=A simple chess application
