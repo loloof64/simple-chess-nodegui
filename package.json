@@ -1,7 +1,7 @@
 {
-  "name": "nodegui-simple-starter",
+  "name": "simple-chess",
   "version": "1.0.0",
-  "description": "A NodeGui starter project",
+  "description": "A simple chess application.",
   "scripts": {
     "build": "npm run build-code && npm run build-bundle",
     "build-code": "tsc",
@@ -15,9 +15,9 @@
     "url": "git+https://github.com/sedwards2009/nodegui-simple-starter.git"
   },
   "keywords": [
-    "nodegui"
+    "chess"
   ],
-  "author": "Simon Edwards",
+  "author": "Laurent Bernabe",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sedwards2009/nodegui-simple-starter/issues"
